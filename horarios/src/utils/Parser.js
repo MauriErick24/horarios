@@ -1,15 +1,12 @@
-// Función para generar un color aleatorio que no se repita
 function getRandomColor(usedColors) {
   let color;
   do {
-    // Generar color aleatorio en formato hexadecimal
     color = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-  } while (usedColors.has(color)); // Verificar que el color no se haya usado previamente
-  usedColors.add(color); // Añadir el color al conjunto de usados
+  } while (usedColors.has(color));
+  usedColors.add(color);
   return color;
 }
 
-// Parser que asigna colores únicos a cada materia
 export function parseSchedule(data) {
   const slotTimesLookup = {
     0: "6:45 - 8:15",
@@ -39,11 +36,10 @@ export function parseSchedule(data) {
     slots: Array(6).fill(null),
   }));
 
-  const usedColors = new Set(); // Conjunto para almacenar colores ya utilizados
-  const materiaColors = {}; // Objeto para almacenar el color asignado a cada materia
+  const usedColors = new Set();
+  const materiaColors = {};
 
   data.forEach((materia) => {
-    // Asignar un color único si aún no se ha asignado
     if (!materiaColors[materia.materia]) {
       materiaColors[materia.materia] = getRandomColor(usedColors);
     }
@@ -55,11 +51,10 @@ export function parseSchedule(data) {
       const dayIndex = days[horario.dia];
 
       if (slotIndex !== -1 && dayIndex !== undefined) {
-        // Formato con la materia y su color asignado
         const cellContent = `${materia.materia}\nAula: ${horario.aula}\nGrupo: ${materia.grupo}`;
         rows[slotIndex].slots[dayIndex] = {
           content: cellContent,
-          color: materiaColors[materia.materia], // Asignar color
+          color: materiaColors[materia.materia],
         };
       }
     });

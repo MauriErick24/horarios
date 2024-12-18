@@ -3,7 +3,6 @@ import "./ScheduleTable.css";
 
 const ScheduleApp = ({ initialSchedule }) => {
   const [schedule, setSchedule] = useState(() => {
-    // Inicia con el horario vacío
     const clearedSchedule = { ...initialSchedule };
     Object.keys(clearedSchedule).forEach((day) => {
       clearedSchedule[day] = clearedSchedule[day].map(() => null);
@@ -55,13 +54,12 @@ const ScheduleApp = ({ initialSchedule }) => {
     ];
     const timeSlots = [];
 
-    // Generamos las horas de 6:45 a 21:45 con incrementos de 90 minutos
-    let currentTime = 6 * 60 + 45; // 6:45 en minutos
+    let currentTime = 6 * 60 + 45;
     while (currentTime <= 21 * 60 + 45) {
       const hours = Math.floor(currentTime / 60);
       const minutes = currentTime % 60;
       timeSlots.push(`${hours}:${minutes < 10 ? "0" : ""}${minutes}`);
-      currentTime += 90; // Incremento de 90 minutos
+      currentTime += 90;
     }
 
     return (
