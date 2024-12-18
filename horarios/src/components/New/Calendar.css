@@ -1,0 +1,278 @@
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  overflow-x: hidden;
+}
+
+.calendar-main {
+  display: flex;
+}
+
+.calendar-time-column {
+  width: 55px;
+  background-color: #fff;
+  flex-shrink: 0;
+  border-right: 1px solid #ddd;
+}
+
+.calendar-empty-header {
+  height: 40px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.calendar-time-slot {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.calendar-scrollable {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.calendar-header {
+  display: flex;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.calendar-day-header {
+  min-width: 180px;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  border-right: 1px solid #ddd;
+  width: 100%;
+}
+
+.calendar-body {
+  display: flex;
+}
+
+.calendar-day-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  min-width: 180px;
+}
+
+.selectors {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selectors select {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.selected-subjects {
+  margin: 20px 0;
+}
+
+.selected-subjects ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.selected-subjects li {
+  margin: 10px 0;
+}
+
+.selected-subjects button {
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.calendar-main {
+  display: flex;
+  overflow-x: auto;
+}
+
+.calendar-time-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-time-slot {
+  padding: 5px;
+}
+
+.calendar-header,
+.calendar-body {
+  display: flex;
+  width: 100%;
+}
+
+.calendar-day-column {
+  display: block;
+  flex-direction: column;
+}
+
+.calendar-cell {
+  width: inherit;
+  height: 60px;
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.event {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-empty-header {
+  height: 60px;
+}
+
+.calendar-event {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+}
+/* Calendar.css */
+
+.calendar-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.calendar {
+  display: flex;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.hours-column {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  border-right: 1px solid #ddd;
+  text-align: center;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.hour-cell {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  background-color: #f4f4f4;
+  min-width: 70px;
+}
+
+.days-container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.day-column {
+  min-width: 150px;
+  border-right: 1px solid #ddd;
+}
+
+.day-header {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.time-slot {
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.cell {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  word-wrap: break-word;
+}
+
+.subject {
+  padding: 5px;
+  border-radius: 5px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.conflict {
+  border: 2px solid red;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legend ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.legend li {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .day-column {
+    min-width: 120px;
+  }
+
+  .day-header {
+    font-size: 14px;
+  }
+
+  .hour-cell {
+    font-size: 12px;
+  }
+
+  .subject {
+    font-size: 10px;
+  }
+}
