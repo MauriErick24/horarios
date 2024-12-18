@@ -1,0 +1,77 @@
+.schedule-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.schedule-view {
+  overflow-x: auto;
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  word-wrap: break-word;
+}
+
+.schedule-table th {
+  background-color: #f1f1f1;
+}
+
+.schedule-table td {
+  background-color: #fff;
+  min-width: 150px;
+  word-wrap: break-word;
+}
+
+.schedule-table td:first-child,
+.schedule-table th:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #f1f1f1;
+  z-index: 2;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  min-width: 70px;
+}
+
+.schedule-table td:first-child {
+  font-weight: bold;
+}
+
+.schedule-table td > div {
+  padding: 5px;
+  border-radius: 5px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+.schedule-app .subject-list {
+  margin-bottom: 20px;
+}
+
+.schedule-app .subject-list label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.schedule-app .subject-list input {
+  margin-right: 10px;
+}
+
+body {
+  overflow-x: hidden;
+}
