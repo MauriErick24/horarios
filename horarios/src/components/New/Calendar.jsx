@@ -212,26 +212,35 @@ const Calendar = () => {
 
   return (
     <div className="calendar-container" ref={calendarRef}>
-      <Box sx={{ textAlign: "center", pt: 0 }}>
-        <Button onClick={handleScroll}>
-          <p className="exo-2-bold">Buscar materias</p>
-        </Button>
-      </Box>
-      {/* Botón para exportar */}
-      <button
-        onClick={exportToPNG}
-        style={{
-          marginBottom: "10px",
-          padding: "10px",
-          background: "#1c3f73",
-          color: "white",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-        }}
-      >
-        Exportar Calendario a PNG
-      </button>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Box
+          sx={{
+            textAlign: "center",
+            pt: 0,
+            border: "2px solid #1976d2",
+            borderRadius: "5px",
+            margin: "5px",
+          }}
+        >
+          <Button onClick={handleScroll}>
+            <p className="exo-2-bold">Buscar materias</p>
+          </Button>
+        </Box>
+        <Box
+          sx={{
+            textAlign: "center",
+            pt: 0,
+            border: "2px solid #1976d2",
+            borderRadius: "5px",
+            margin: "5px",
+          }}
+        >
+          <Button onClick={exportToPNG}>
+            <p className="exo-2-bold"> Exportar Calendario a PNG</p>
+          </Button>
+        </Box>
+      </div>
+
       {/* Calendario */}
       <div className="calendar-main">
         <div className="calendar-time-column">
@@ -340,7 +349,7 @@ const Calendar = () => {
             renderInput={(params) => (
               <TextField {...params} label="Selecciona una carrera" />
             )}
-            sx={{ width: 600 }}
+            sx={{ width: "100%" }}
             disableClearable
           />
 
@@ -349,7 +358,7 @@ const Calendar = () => {
             <Autocomplete
               multiple
               value={selectedSemesters}
-              sx={{ width: 600 }}
+              sx={{ width: "100%" }}
               onChange={(e, newValue) => setSelectedSemesters(newValue)}
               options={availableSemesters.map((sem) => sem.nivel)}
               renderInput={(params) => (
@@ -363,7 +372,7 @@ const Calendar = () => {
           {selectedSemesters.length > 0 && (
             <Autocomplete
               multiple
-              sx={{ width: 600 }}
+              sx={{ width: "100%" }}
               value={selectedSubjects.map((subject) => subject)}
               onChange={handleSubjectChange}
               groupBy={(option) => `${option.semestre} - ${option.materia}`}
