@@ -68,10 +68,16 @@ const schedule = {
                   grupo: "4",
                   dia: [
                     {
-                      nombre: "Jueves",
-                      horaInicio: "10:30",
-                      horaFin: "12:00",
-                      aula: "692F",
+                      nombre: "Martes",
+                      horaInicio: "15:45",
+                      horaFin: "18:45",
+                      aula: "692G",
+                    },
+                    {
+                      nombre: "Viernes",
+                      horaInicio: "14:15",
+                      horaFin: "15:45",
+                      aula: "692E",
                     },
                   ],
                 },
@@ -749,7 +755,147 @@ const schedule = {
         },
       ],
     },
-    
+    {
+      carrera: "LICENCIATURA EN MATEMATICA (DID)",
+      semestre: [
+        {
+          nivel: "1",
+          materia: [
+            {
+              nombre: "BIOLOGIA GENERAL",
+              docentes: [
+                {
+                  nombre: "FERNANDEZ TERRAZAS ERIKA",
+                  grupo: "1",
+                  dia: [
+                    {
+                      nombre: "Lunes",
+                      horaInicio: "12:45",
+                      horaFin: "14:15",
+                      aula: "608A",
+                    },
+                    {
+                      nombre: "Miércoles",
+                      horaInicio: "09:45",
+                      horaFin: "11:15",
+                      aula: "690A",
+                    },
+                    {
+                      nombre: "Miércoles",
+                      horaInicio: "11:15",
+                      horaFin: "12:45",
+                      aula: "608A",
+                    },
+                    {
+                      nombre: "Viernes",
+                      horaInicio: "08:15",
+                      horaFin: "09:45",
+                      aula: "690A",
+                    },
+                  ],
+                },
+                {
+                  nombre: "CESPEDES GUIZADA MARIA BENITA",
+                  grupo: "2",
+                  dia: [
+                    {
+                      nombre: "Martes",
+                      horaInicio: "11:15",
+                      horaFin: "12:45",
+                      aula: "690D",
+                    },
+                    {
+                      nombre: "Viernes",
+                      horaInicio: "09:45",
+                      horaFin: "11:15",
+                      aula: "690D",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              nombre: "FISICA BASICA I",
+              docentes: [
+                {
+                  nombre: "M TORRICO TROCHE MILKA MONICA",
+                  grupo: "M",
+                  dia: [
+                    {
+                      nombre: "Lunes",
+                      horaInicio: "09:45",
+                      horaFin: "11:15",
+                      aula: "624G",
+                    },
+                    {
+                      nombre: "Martes",
+                      horaInicio: "09:45",
+                      horaFin: "11:15",
+                      aula: "692B",
+                    },
+                    {
+                      nombre: "Jueves",
+                      horaInicio: "06:45",
+                      horaFin: "08:15",
+                      aula: "692H",
+                    },
+                  ],
+                },
+                {
+                  nombre: "CARRASCO CALVO ALVARO HERNANDO",
+                  grupo: "5",
+                  dia: [
+                    {
+                      nombre: "Lunes",
+                      horaInicio: "17:15",
+                      horaFin: "18:45",
+                      aula: "642",
+                    },
+                    {
+                      nombre: "Martes",
+                      horaInicio: "15:45",
+                      horaFin: "17:15",
+                      aula: "617",
+                    },
+                    {
+                      nombre: "Miércoles",
+                      horaInicio: "14:15",
+                      horaFin: "15:45",
+                      aula: "607",
+                    },
+                  ],
+                },
+                {
+                  nombre: "QUISPE CHOQUE VLADIMIR",
+                  grupo: "13",
+                  dia: [
+                    {
+                      nombre: "Lunes",
+                      horaInicio: "09:45",
+                      horaFin: "11:15",
+                      aula: "652",
+                    },
+                    {
+                      nombre: "MLunes",
+                      horaInicio: "18:45",
+                      horaFin: "20:15",
+                      aula: "691F",
+                    },
+                    {
+                      nombre: "Martes",
+                      horaInicio: "18:45",
+                      horaFin: "20:15",
+                      aula: "692C",
+                    },
+                  ],
+                },
+              ],
+            },
+            
+          ],
+        }
+      ],    
+    },    
   ],
 };
 
