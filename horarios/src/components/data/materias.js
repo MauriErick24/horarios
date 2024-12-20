@@ -749,6 +749,145 @@ const schedule = {
         },
       ],
     },
+    ///////////////////////
+    {
+      carrera: "LICENCIATURA EN FISICA (DID)",
+      semestre: [
+        {
+          nivel: "1",
+          materia: [
+            {
+              nombre: "BIOLOGIA GENERAL",
+              docentes: [
+                { 
+                  nombre: "FERNANDEZ TERRAZAS ERIKA",
+                  grupo: "1",
+                  dia: [
+                    {
+                      nombre: "Lunes",
+                      horaInicio: "11:15",
+                      horaFin: "12:45",
+                      aula: "Labos-608A",
+                    },
+                    {
+                      nombre: "Miércoles",
+                      horaInicio: "09:45",
+                      horaFin: "11:15",
+                      aula: "608A",
+                    },
+                    {
+                      nombre: "Miércoles",
+                      horaInicio: "11:15",
+                      horaFin: "12:45",
+                      aula: "608A",
+                    },
+                    {
+                      nombre: "Viernes",
+                      horaInicio: "08:15",
+                      horaFin: "09:45",
+                      aula: "608A",
+                    },
+                  ],
+                },
+               
+              ],
+            },
+            {
+              nombre: "QUIMICA GENERAL",
+              docentes: [
+                {
+                  nombre: "FERRUFINO GUARDIA ERICK VLADIMIR",
+                  grupo: "5",
+                  dia: [
+                    {
+                      nombre: "Lunes",
+                      horaInicio: "14:15",
+                      horaFin: "15:45",
+                      aula: "691A",
+                    },
+                    {
+                      nombre: "Martes",
+                      horaInicio: "14:15",
+                      horaFin: "15:45",
+                      aula: "693C",
+                    },
+                    {
+                      nombre: "Jueves",
+                      horaInicio: "15:45",
+                      horaFin: "17:15",
+                      aula: "692B",
+                    },
+                  ],
+                },
+              ],
+            },
+            
+            {
+              nombre: "ALGEBRA I",
+              docentes: [
+                {
+                  nombre: "CARRASCO CALVO ALVARO HERNANDO ",
+                  grupo: "5",
+                  dia: [
+                    {
+                      nombre: "Lunes",
+                      horaInicio: "17:15",
+                      horaFin: "18:45",
+                      aula: "642",
+                    },
+                    {
+                      nombre: "Martes",
+                      horaInicio: "15:45",
+                      horaFin: "17:15",
+                      aula: "617",
+                    },
+                    {
+                      nombre: "Miércoles",
+                      horaInicio: "14:15",
+                      horaFin: "15:45",
+                      aula: "607",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              nombre: "CALCULO 1",
+              docentes: [
+                {
+                  nombre: "FRIAS CRUZ ROSALIA",
+                  grupo: "3",
+                  dia: [
+                    {
+                      nombre: "Martes",
+                      horaInicio: "06:45",
+                      horaFin: "08:15",
+                      aula: "Labos-661",
+                    },
+                    {
+                      nombre: "Jueves",
+                      horaInicio: "18:45",
+                      horaFin: "20:15",
+                      aula: "692A",
+                    },
+                    {
+                      nombre: "Sábado",
+                      horaInicio: "11:15",
+                      horaFin: "12:45",
+                      aula: "624",
+                    },
+                  ],
+                },
+                              
+                
+                
+              ],
+            },
+          ],
+        },
+       
+      ],
+    },
     
   ],
 };
