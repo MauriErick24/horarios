@@ -794,24 +794,6 @@ const schedule = {
                     },
                   ],
                 },
-                {
-                  nombre: "CESPEDES GUIZADA MARIA BENITA",
-                  grupo: "2",
-                  dia: [
-                    {
-                      nombre: "Martes",
-                      horaInicio: "11:15",
-                      horaFin: "12:45",
-                      aula: "690D",
-                    },
-                    {
-                      nombre: "Viernes",
-                      horaInicio: "09:45",
-                      horaFin: "11:15",
-                      aula: "690D",
-                    },
-                  ],
-                },
               ],
             },
             {
@@ -841,6 +823,11 @@ const schedule = {
                     },
                   ],
                 },
+              ],
+            },
+            {
+              nombre: "ALGEBRA I",
+              docentes: [
                 {
                   nombre: "CARRASCO CALVO ALVARO HERNANDO",
                   grupo: "5",
@@ -865,33 +852,38 @@ const schedule = {
                     },
                   ],
                 },
+              ],
+            },
+            {
+              nombre: "CALCULO I",
+              docentes: [
                 {
                   nombre: "QUISPE CHOQUE VLADIMIR",
                   grupo: "13",
                   dia: [
-                    {
-                      nombre: "Lunes",
-                      horaInicio: "09:45",
-                      horaFin: "11:15",
-                      aula: "652",
-                    },
-                    {
-                      nombre: "Lunes",
-                      horaInicio: "18:45",
-                      horaFin: "20:15",
-                      aula: "691F",
-                    },
-                    {
-                      nombre: "Martes",
-                      horaInicio: "18:45",
-                      horaFin: "20:15",
-                      aula: "692C",
-                    },
-                  ],
-                },
-              ],
-            },
-            
+                  {
+                    nombre: "Lunes",
+                    horaInicio: "09:45",
+                    horaFin: "11:15",
+                    aula: "652",
+                  },
+                  {
+                    nombre: "Lunes",
+                    horaInicio: "18:45",
+                    horaFin: "20:15",
+                    aula: "691F",
+                  },
+                  {
+                    nombre: "Martes",
+                    horaInicio: "18:45",
+                    horaFin: "20:15",
+                    aula: "692C",
+                  },
+                ],
+               },
+             ],
+            }
+
           ],
         }
       ],    
