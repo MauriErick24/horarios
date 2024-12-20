@@ -876,7 +876,7 @@ const schedule = {
                       aula: "652",
                     },
                     {
-                      nombre: "MLunes",
+                      nombre: "Lunes",
                       horaInicio: "18:45",
                       horaFin: "20:15",
                       aula: "691F",
