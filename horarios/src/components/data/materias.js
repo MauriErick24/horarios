@@ -68,16 +68,10 @@ const schedule = {
                   grupo: "4",
                   dia: [
                     {
-                      nombre: "Martes",
-                      horaInicio: "15:45",
-                      horaFin: "18:45",
-                      aula: "692G",
-                    },
-                    {
-                      nombre: "Viernes",
-                      horaInicio: "14:15",
-                      horaFin: "15:45",
-                      aula: "692E",
+                      nombre: "Jueves",
+                      horaInicio: "10:30",
+                      horaFin: "12:00",
+                      aula: "692F",
                     },
                   ],
                 },
@@ -755,8 +749,9 @@ const schedule = {
         },
       ],
     },
+    ///////////////////////
     {
-      carrera: "LICENCIATURA EN MATEMATICA (DID)",
+      carrera: "LICENCIATURA EN FISICA (DID)",
       semestre: [
         {
           nivel: "1",
@@ -764,21 +759,21 @@ const schedule = {
             {
               nombre: "BIOLOGIA GENERAL",
               docentes: [
-                {
+                { 
                   nombre: "FERNANDEZ TERRAZAS ERIKA",
                   grupo: "1",
                   dia: [
                     {
                       nombre: "Lunes",
-                      horaInicio: "12:45",
-                      horaFin: "14:15",
-                      aula: "608A",
+                      horaInicio: "11:15",
+                      horaFin: "12:45",
+                      aula: "Labos-608A",
                     },
                     {
                       nombre: "Miércoles",
                       horaInicio: "09:45",
                       horaFin: "11:15",
-                      aula: "690A",
+                      aula: "608A",
                     },
                     {
                       nombre: "Miércoles",
@@ -790,46 +785,48 @@ const schedule = {
                       nombre: "Viernes",
                       horaInicio: "08:15",
                       horaFin: "09:45",
-                      aula: "690A",
+                      aula: "608A",
                     },
                   ],
                 },
+               
               ],
             },
             {
-              nombre: "FISICA BASICA I",
+              nombre: "QUIMICA GENERAL",
               docentes: [
                 {
-                  nombre: "M TORRICO TROCHE MILKA MONICA",
-                  grupo: "M",
+                  nombre: "FERRUFINO GUARDIA ERICK VLADIMIR",
+                  grupo: "5",
                   dia: [
                     {
                       nombre: "Lunes",
-                      horaInicio: "09:45",
-                      horaFin: "11:15",
-                      aula: "624G",
+                      horaInicio: "14:15",
+                      horaFin: "15:45",
+                      aula: "691A",
                     },
                     {
                       nombre: "Martes",
-                      horaInicio: "09:45",
-                      horaFin: "11:15",
-                      aula: "692B",
+                      horaInicio: "14:15",
+                      horaFin: "15:45",
+                      aula: "693C",
                     },
                     {
                       nombre: "Jueves",
-                      horaInicio: "06:45",
-                      horaFin: "08:15",
-                      aula: "692H",
+                      horaInicio: "15:45",
+                      horaFin: "17:15",
+                      aula: "692B",
                     },
                   ],
                 },
               ],
             },
+            
             {
               nombre: "ALGEBRA I",
               docentes: [
                 {
-                  nombre: "CARRASCO CALVO ALVARO HERNANDO",
+                  nombre: "CARRASCO CALVO ALVARO HERNANDO ",
                   grupo: "5",
                   dia: [
                     {
@@ -855,39 +852,43 @@ const schedule = {
               ],
             },
             {
-              nombre: "CALCULO I",
+              nombre: "CALCULO 1",
               docentes: [
                 {
-                  nombre: "QUISPE CHOQUE VLADIMIR",
-                  grupo: "13",
+                  nombre: "FRIAS CRUZ ROSALIA",
+                  grupo: "3",
                   dia: [
-                  {
-                    nombre: "Lunes",
-                    horaInicio: "09:45",
-                    horaFin: "11:15",
-                    aula: "652",
-                  },
-                  {
-                    nombre: "Lunes",
-                    horaInicio: "18:45",
-                    horaFin: "20:15",
-                    aula: "691F",
-                  },
-                  {
-                    nombre: "Martes",
-                    horaInicio: "18:45",
-                    horaFin: "20:15",
-                    aula: "692C",
-                  },
-                ],
-               },
-             ],
-            }
-
+                    {
+                      nombre: "Martes",
+                      horaInicio: "06:45",
+                      horaFin: "08:15",
+                      aula: "Labos-661",
+                    },
+                    {
+                      nombre: "Jueves",
+                      horaInicio: "18:45",
+                      horaFin: "20:15",
+                      aula: "692A",
+                    },
+                    {
+                      nombre: "Sábado",
+                      horaInicio: "11:15",
+                      horaFin: "12:45",
+                      aula: "624",
+                    },
+                  ],
+                },
+                              
+                
+                
+              ],
+            },
           ],
-        }
-      ],    
-    },    
+        },
+       
+      ],
+    },
+    
   ],
 };
 
